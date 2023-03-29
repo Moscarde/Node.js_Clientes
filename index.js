@@ -66,7 +66,24 @@ app.get('/clientes', (req, res) => {
     })
 })
 
-app.post('/clientes/insertcliente', (req, res) => {
+app.get('/clientes/remove/:id', (req, res) => {
+    const id = req.params.id
+
+    const query = `DELETE FROM clientes WHERE ?? = ?`
+    const data = ['id', id]
+    
+    pool.query(query, data, err => {
+        if (err) {
+            console.log(err)
+            return
+        }
+
+        res.redirect('/clientes')
+
+    })
+})
+
+app.post('/clientes/insert', (req, res) => {
     const name = req.body.name
     const address = req.body.address
     const email = req.body.email
