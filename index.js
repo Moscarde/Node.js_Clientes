@@ -61,7 +61,6 @@ app.get('/clientes', (req, res) => {
         }
 
         const clientes = data
-        console.log(clientes)
         res.render('clientes', {clientes})
     })
 })
@@ -88,9 +87,11 @@ app.post('/clientes/insert', (req, res) => {
     const address = req.body.address
     const email = req.body.email
     const tel = req.body.tel
+    console.log(typeof(tel))
+    console.log(tel)
 
     const query = `INSERT INTO clientes (??, ??, ??, ??) VALUES (?, ?, ?, ?)`
-    const data = ['name', 'address', 'email', 'tel', name, address, email, tel]
+    const data = ['name', 'address', 'tel', 'email', name, address, tel, email]
 
     pool.query(query, data, err => {
         if (err) {
