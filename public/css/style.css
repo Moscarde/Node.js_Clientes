@@ -1,0 +1,140 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+    color: #C9D1D9;
+    background-color: #0d1117;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 500px;
+    margin: 4em auto;
+    border: 1px solid #30363D;
+    border-radius: 8px;
+}
+
+.container h1 {
+    display: block;
+    padding: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #161B22;
+}
+
+/* home*/
+
+.options a {
+    display: block;
+    padding: 16px;
+    border-top: 1px solid #30363D;
+    border-bottom-left-radius: 6px;
+    text-decoration: none;
+    color: #58A6FF;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.options a:last-child {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+/* Clientes */
+
+.clientes-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #30363D;
+    align-items: center;
+    padding: 8px 0 8px 0;
+}
+.clientes-list p {
+    margin-left: 16px;
+}
+
+.clientes-list a {
+    border: none;
+    margin-right: 16px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #1f6feb;
+}
+.clientes-list a:hover {
+    text-decoration: underline;
+}
+
+.clientes-list li:last-child {
+    border-bottom: 1px solid #30363D;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    padding: 8px 16px 0 16px;
+}
+
+.actions a, .actions input {
+    display: block;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #C9D1D9;
+    background-color: #1f6feb;
+    border: 1px solid #6e7681;
+    border-radius: 8px;
+    font-size: 12px;
+    transition: 0.06s ease-in-out;
+    text-decoration: none;
+}
+
+.actions a:hover, .actions input:hover {
+    background-color: #388bfd;
+}
+
+
+/* Form*/
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0 16px;
+    border-radius: 8px;
+}
+
+.form label ~ input {
+    padding: 6px 12px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #30363D;
+}
+
+.form .actions {
+    padding: 8px 0;
+}
+
+/* Cliente info */
+.cliente-info ul{
+    list-style: none;
+    padding: 8px 16px;
+}
+
+.cliente-info h2 {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 4px 0;
+}
+
+.cliente-info p {
+    margin-bottom: 8px;
+}

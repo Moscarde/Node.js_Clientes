@@ -1,0 +1,25 @@
+<div class="container clientes-box">
+    <h1>{{cliente.name}}</h1>
+    <div class="cliente-info">
+    <ul>
+        <li>
+            <h2>Endereço</h2>
+            <p>{{cliente.address}}</p>
+        </li>
+        <li>
+            <h2>Email</h2>
+            <p>{{cliente.email}}</p>
+        </li>
+        <li>
+            <h2>Telefone</h2>
+            <p>{{cliente.tel}}</p>
+        </li>
+    </ul>
+    </div>
+    
+
+    <div class="actions">
+        <a href="/clientes" id="action">Voltar</a>
+        <a href="/clientes/edit/{{cliente.id}}" id="action">Editar</a>
+    </div>
+</div>

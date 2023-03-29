@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Editando cliente</h1>
+    <form action="/clientes/updatecliente" method="POST" class="form">
+
+        <input type="text" name="id" value="{{cliente.id}}" hidden>
+
+        <label for="name">Nome</label>
+        <input type="text" name="name" placeholder="Digite o nome" value="{{cliente.name}}">
+
+        <label for="address">Endereço</label>
+        <input type="text" name="address" placeholder="Digite o endereço" value="{{cliente.address}}">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Digite o email" value="{{cliente.email}}">
+
+        <label for="tel">Telefone</label>
+        <input type="tel" name="tel" placeholder="Digite o telefone" value="{{cliente.tel}}">
+        <div class="actions">
+            <input type="submit" id="action" value="Atualizar">
+            <a href="/clientes">Cancelar</a>
+        </div>
+    </form>
+</div>

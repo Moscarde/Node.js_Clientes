@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Lista de clientes</h1>
+    <div class="clientes-list">
+        <ul>
+            {{#each clientes}}
+            <li>
+                <p>{{this.name}}</p>
+                <a href="/clientes/{{this.id}}">Exibir detalhes...</a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="actions">
+        <a href="/" claass="action">Voltar</a>
+
+    </div>
+</div>
